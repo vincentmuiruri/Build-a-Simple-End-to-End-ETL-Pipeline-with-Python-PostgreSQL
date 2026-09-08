@@ -26,7 +26,7 @@ def run_pipeline():
     load_to_postgres(user_df, 'users')
 
     print("Data loading completed.")
-    print("ETL pipeline finished successfully.")
+    print("ETL pipeline finished successfully!")
 
 if __name__ == "__main__":
     run_pipeline()
