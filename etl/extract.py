@@ -1,8 +1,10 @@
 import pandas as pd
 import requests
 
-BASE_URL = "https://fakestoreapi.com/"
+# Base URL for the Fake Store API
+BASE_URL = "https://fakestoreapi.com"
 
+# Extract product data from the Fake Store API
 def extract_product():
     url = f'{BASE_URL}/products'
     response = requests.get(url)
@@ -13,7 +15,7 @@ def extract_product():
 
     return product_df
 
-
+# Extract user data from the Fake Store API
 def extract_users():
     url = f'{BASE_URL}/users'
     response = requests.get(url)
